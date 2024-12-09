@@ -1,0 +1,270 @@
+/* General Styles */
+.main {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 20px;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+}
+
+.right-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input[type="text"] {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.champ-buttons,
+.selected-champs,
+.champ-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.champ-btn,
+.selected-btn {
+  background-color: #007bff;
+  width: 100px;
+  height: 50px;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.champ-btn:hover,
+.selected-btn:hover {
+  background-color: #0056b3;
+}
+
+.selected-btn {
+  background-color: #dc3545;
+}
+
+.selected-btn:hover {
+  background-color: #b12b36;
+}
+
+/* Champ Text */
+.champ-text {
+  font-size: 14px;
+  color: #6c757d;
+  text-transform: capitalize;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* Highlight for selected champions */
+.selected-champ {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #007bff;
+}
+
+/* Compositions */
+.composition {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.composition-header {
+  margin-bottom: 10px;
+}
+
+.composition-section {
+  margin-top: 10px;
+}
+
+.composition-section h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.composition-separator {
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+/* Indicador de campeones seleccionados */
+.indicator {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 5px 0 10px;
+}
+
+/* All Early Comps */
+.all-early-comps {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.all-early-comps h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.early-comp-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.early-comp-section h3 a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.early-comp-section h3 a:hover {
+  text-decoration: underline;
+}
+
+.champ-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.composition-separator {
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+h2 {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  margin: 0 0 10px;
+  border: 1px solid #ddd;
+}
+
+h2:hover {
+  background-color: #eaeaea;
+}
+
+.accordion-toggle {
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.accordion-toggle:hover {
+  color: #007bff;
+}
+
+/* Contenedor general de cada sección (All Early Comps y Filtered Compositions) */
+.section-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.mid-comp-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.mid-comp-section h3 a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.mid-comp-section h3 a:hover {
+  text-decoration: underline;
+}
+
+.early-champs-summary {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.early-champs-summary h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.champ-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.champ-summary .champ-text {
+  font-size: 14px;
+  color: #6c757d;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
