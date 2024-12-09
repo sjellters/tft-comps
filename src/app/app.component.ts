@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<any>('/compositions.json').subscribe({
+    this.http.get<any>('compositions.json').subscribe({
       next: (response) => {
         this.allChamps = response.allChamps || [];
         this.filteredChamps = [...this.allChamps];
